@@ -2,7 +2,8 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-.form-popper {
+#form-popper {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,7 +11,6 @@
     height: 100%;
 }
 #form-pop {
-    display: none;
     margin: 100px auto;
     width: 500px;
     height: 200px;

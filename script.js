@@ -1,11 +1,13 @@
 let myLibrary = [];
-function Book(title, author, pages, read) {
+class Book {
+    constructor(title, author, pages, read){
     this.title = title
     this.author = author
     this.pages = pages
     this.read = read
-    this.info = function () {
-        return `${title}, ${author}, ${pages} long, ${read}`
+    }
+    get info() {
+        return `${this.title}, ${this.author}, ${this.pages} long, ${this.read}`
     }
 }
 // displays all the books on the page
@@ -111,12 +113,12 @@ function storage() {
 
 // displays the form
 function displayForm() {
-    document.getElementById("form-pop").style.display = "block";
+    document.getElementById("form-popper").style.display = "block";
 }
 
 // hides the form
 function hideForm() {
-    document.getElementById("form-pop").style.display = "none";
+    document.getElementById("form-popper").style.display = "none";
 }
 
 storage();
